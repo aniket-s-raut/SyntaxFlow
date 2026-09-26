@@ -1,5 +1,5 @@
 # BUSINESS REQUIREMENTS DOCUMENT (BRD) - Version 1.0
-**Project Name:** [SyntaxFlow] 
+**Project Name:** SyntaxFlow
 **Domain:** EdTech / Developer Productivity Tools
 
 ## 1. Executive Summary
@@ -21,7 +21,7 @@ The product is a cloud-native, distributed web platform integrating a client-sid
 - **E-Reader & Speech Recognition:** PDF/ePub upload capability. Uses Web Speech API to listen to the user read aloud, pausing and offering correct audio pronunciations upon detecting errors.
 - **Contextual FSRS Flashcards:** Users highlight unknown words in a sentence; the AI generates the contextual meaning, injecting it directly into a Free Spaced Repetition Scheduler (FSRS) database for daily review.
 
-## 5. Architectural & Technical Requirements (For Job Market Alignment)
+## 5. Architectural & Technical Requirements
 - **Architecture:** Clean Architecture implementing the CQRS pattern (via MediatR). 
 - **Distributed Systems:** Event-driven communication using Azure Service Bus to decouple the AI generation engine (Azure Functions) from the main API.
 - **Parallel Processing:** Heavy utilization of C# `async/await` and Task Parallel Library (TPL) for concurrent AI requests and telemetry processing.
